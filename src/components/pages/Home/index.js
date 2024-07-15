@@ -13,7 +13,7 @@ const Home = () => {
                     to="/posts"
                     className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 ease-in-out"
                 >
-                    Visit the Blog
+                    Visit the my Blog
                 </Link>
             </div>
         </section>
