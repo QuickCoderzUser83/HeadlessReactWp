@@ -17,6 +17,8 @@ import Dashboard from './components/account/Dashboard'
 import Downloads from './components/account/Downloads'
 import Orders from './components/account/Orders'
 
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 const LazyAbout = React.lazy(() => import('./components/pages/About'));
 
 const App = () =>  {
@@ -48,6 +50,8 @@ const App = () =>  {
         <Route path="my-account/edit-account" element={<AccountDetails />} />
 
       </Routes>
+
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
