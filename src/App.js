@@ -7,7 +7,7 @@ import Posts from './components/pages/Posts';
 import PostSingle from './components/pages/PostSingle';
 import Products from './components/pages/Products';
 import Login from './components/pages/Login'
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/';
 import ProtectedRoutes from './ProtectedRoutes';
 
 // account pages
