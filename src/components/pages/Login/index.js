@@ -1,13 +1,15 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useDispatch, useSelector} from 'react-redux';
+import { login } from '../../../redux/AuthSlice';
 
 const Login = () => {
 
-    const [userData, setUserData] = useState('');
+    const dispatch = useDispatch();
+    const {user, isLoading, error} = useSelector((state) => state.auth);
 
     const formik = useFormik({
+
         // Initial values
         initialValues: {
             email: '',
@@ -22,37 +24,18 @@ const Login = () => {
 
         // On Submit
         onSubmit: (data) => {
-            const {email , password} = data;
-            axios.post(`${process.env.REACT_APP_API_AUTH_TOKEN}`, {
-                "username": email,
-                "password": password
-            })
-            .then((res)=>{
-                console.log('response', res);
-                if (res.status === 200) {
-                    localStorage.setItem('user', JSON.stringify(res.data));
-                    setUserData(res.data);
-                }
-            })
-            .catch((err)=>{
-                console.log('error:', err.message);
-            });
+            dispatch(login(data));
         }
         
     });
 
-
-    useEffect(() => {
-        var userStoredData = localStorage.getItem('user');
-        setUserData(userStoredData ? JSON.parse(userStoredData) : '');
-    }, [])
-
     return (
         <section className="h-screen">
             <div className="max-w-screen-xl px-6 py-12 h-full m-auto">
-                {
-                    userData ? <p className='text-zinc-500 text-lg'>Hi <strong>{userData.user_display_name}</strong> You are Loged in</p>
-                    :
+                {isLoading && 'Loading....'}
+                {!isLoading && error ? <div>Error: {error}</div> : null}
+                {!isLoading && user.token && <p className='text-zinc-500 text-lg'>Hi <strong>{user.user_display_name}</strong> You are Loged in</p>}
+                {!isLoading && !user.token && 
                     <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
                         <div className="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
                             <img
