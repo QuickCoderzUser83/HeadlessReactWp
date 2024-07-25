@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-5 px-4">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/"
-                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block py-2 px-3 text-white hover:text-blue-500'}
+                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block text-white hover:text-blue-500'}
                             >
                                 Home
                             </NavLink>
@@ -30,7 +30,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/about"
-                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block py-2 px-3 text-white hover:text-blue-500'}
+                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block text-white hover:text-blue-500'}
                             >
                                 About
                             </NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/products"
-                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block py-2 px-3 text-white hover:text-blue-500'}
+                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block text-white hover:text-blue-500'}
                             >
                                 Products
                             </NavLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to="/posts"
-                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block py-2 px-3 text-white hover:text-blue-500'}
+                                className={({ isActive }) => (isActive ? 'active text-blue-500 ' : '') + 'block text-white hover:text-blue-500'}
                             >
                                 Posts
                             </NavLink>
