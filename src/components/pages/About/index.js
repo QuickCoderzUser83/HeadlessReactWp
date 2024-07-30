@@ -3,7 +3,7 @@ const About = () => {
  return (
     <>
     <img className="w-full h-96 object-cover" src="https://images4.alphacoders.com/134/1341419.png" alt="about" />
-    <div className="max-w-screen-xl m-auto py-6 px-4">
+    <div className="max-w-screen-2xl m-auto py-6 px-4">
         <div className="font-normal text-gray-600 leading-7">
             <p className="mb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ante purus, scelerisque sed arcu et, auctor hendrerit massa. Nam vel mauris vitae leo maximus laoreet. Maecenas efficitur nunc in consequat ultrices. Suspendisse non tellus non odio ullamcorper porta. Sed ut nisl id ligula porttitor dapibus a ut leo. Maecenas ullamcorper ipsum ac nisl euismod blandit. Curabitur convallis at est mollis fermentum.

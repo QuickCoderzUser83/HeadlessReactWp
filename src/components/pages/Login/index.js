@@ -31,7 +31,7 @@ const Login = () => {
 
     return (
         <section className="h-screen">
-            <div className="max-w-screen-xl px-6 py-12 h-full m-auto">
+            <div className="max-w-screen-2xl px-6 py-12 h-full m-auto">
                 {isLoading && 'Loading....'}
                 {!isLoading && error ? <div>Error: {error}</div> : null}
                 {!isLoading && user.token && <p className='text-zinc-500 text-lg'>Hi <strong>{user.user_display_name}</strong> You are Loged in</p>}

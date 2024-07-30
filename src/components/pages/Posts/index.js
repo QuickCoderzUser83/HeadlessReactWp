@@ -58,7 +58,7 @@ const Posts = () => {
 
 
     return (
-        <div className="App max-w-screen-xl m-auto pt-12 px-4">
+        <div className="App max-w-screen-2xl m-auto pt-12 px-4">
             <div className="posts flex gap-4">
                 {loading ? 
                     Array(3).fill().map((_, index) => ( 
