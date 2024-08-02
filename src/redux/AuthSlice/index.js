@@ -29,6 +29,7 @@ const AuthSlice = createSlice({
             state.isLoading = false;
             state.user = action.payload;
             state.error = '';
+            window.location.href = '/my-account/dashboard';
         });
         builder.addCase(login.rejected, (state, action) => {
             state.isLoading = false;

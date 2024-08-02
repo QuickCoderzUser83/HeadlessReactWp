@@ -6,6 +6,11 @@
 @layer base {
   body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #1e293b;
+    background-color: #fff;
   }
 }
 

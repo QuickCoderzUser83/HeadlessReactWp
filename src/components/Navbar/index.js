@@ -98,7 +98,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <NavLink
-                                        to="/posts"
+                                        to="/contact"
                                         className={({ isActive }) => (isActive ? 'active text-primary ' : '') + 'inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 rounded-full hover:text-primary text-default-800'}
                                     >
                                         Contact
@@ -178,7 +178,7 @@ const Navbar = () => {
                                                 </li>
                                                 <li>
                                                     <NavLink
-                                                        to="/my-account/download"
+                                                        to="/my-account/downloads"
                                                         className={({ isActive }) => (isActive ? 'active bg-default-100 ' : '') + 'flex items-center gap-3 rounded px-3 py-2 font-normal text-default-600 transition-all hover:bg-default-100 hover:text-default-700'}
                                                     >
                                                         Downloads
@@ -207,7 +207,7 @@ const Navbar = () => {
                                 ) 
                                 : (<li>
                                     <NavLink
-                                        to="/login"
+                                        to="/auth/login"
                                         className={({ isActive }) => (isActive ? 'active text-primary ' : '') + 'inline-flex items-center text-sm lg:text-base font-medium py-2 px-4 rounded-full hover:text-primary text-default-800'}
                                     >
                                         Login

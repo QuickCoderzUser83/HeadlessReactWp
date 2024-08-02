@@ -37,7 +37,7 @@ const PostSingle = () => {
     };
 
     return (
-        <div className="post-wrapper max-w-screen-xl m-auto py-6 px-4">
+        <div className="post-wrapper max-w-screen-2xl m-auto py-6 px-4">
            {post ? (
                 <>
                     <h5 className="text-5xl leading-tight font-bold tracking-tight text-gray-900">
