@@ -1,13 +1,13 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch, useSelector} from 'react-redux';
-import { login } from '../../../redux/AuthSlice';
+import { login } from '../../redux/AuthSlice';
 
-import Logo from '../../../assets/images/header/foodie-logo.png'
-import AuthBg from '../../../assets/images/login/auth-bg.png'
-import BgShape from '../../../assets/images/login/bg-shape.png'
-import Google from '../../../assets/images/login/google.svg'
-import Facebook from '../../../assets/images/login/facebook.svg'
+import Logo from '../../assets/images/header/foodie-logo.png'
+import AuthBg from '../../assets/images/login/auth-bg.png'
+import BgShape from '../../assets/images/login/bg-shape.png'
+import Google from '../../assets/images/login/google.svg'
+import Facebook from '../../assets/images/login/facebook.svg'
 
 
 const Login = () => {

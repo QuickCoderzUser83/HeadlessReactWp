@@ -11,7 +11,7 @@ const Footer = () => {
                                 <div className="flex flex-col gap-3">
                                     <h5 className="mb-3 font-semibold text-default-950">About</h5>
                                     <div className="text-default-600">
-                                        <Link to="/">About Us</Link>
+                                        <Link to="/about">About Us</Link>
                                     </div>
                                     <div className="text-default-600">
                                         <Link to="/">Features</Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                                 <div className="flex flex-col gap-3">
                                     <h5 className="mb-3 font-semibold text-default-950">Support</h5>
                                     <div className="text-default-600">
-                                        <Link to="/">About</Link>
+                                        <Link to="/about">About</Link>
                                     </div>
                                     <div className="text-default-600">
                                         <Link to="/">Support Center</Link>
@@ -53,7 +53,7 @@ const Footer = () => {
                                         <Link to="/">Feedback</Link>
                                     </div>
                                     <div className="text-default-600">
-                                        <Link to="/">Contact Us</Link>
+                                        <Link to="/contact">Contact Us</Link>
                                     </div>
                                     <div className="text-default-600">
                                         <Link to="/">Accessibility</Link>

@@ -1,10 +1,10 @@
-import CircleBg from '../../../assets/images/banner/circle-bg.png'
-import Customer1 from '../../../assets/images/banner/customer-1.png'
-import Customer2 from '../../../assets/images/banner/customer-2.png'
-import Customer3 from '../../../assets/images/banner/customer-3.png'
-import Burger from '../../../assets/images/banner/burger.svg'
-import Arrow from '../../../assets/images/banner/arrow.png'
-import Hero from '../../../assets/images/banner/banner-hero.png'
+import CircleBg from '../../assets/images/banner/circle-bg.png'
+import Customer1 from '../../assets/images/banner/customer-1.png'
+import Customer2 from '../../assets/images/banner/customer-2.png'
+import Customer3 from '../../assets/images/banner/customer-3.png'
+import Burger from '../../assets/images/banner/burger.svg'
+import Arrow from '../../assets/images/banner/arrow.png'
+import Hero from '../../assets/images/banner/banner-hero.png'
 
 const Banner = () => {
   return (

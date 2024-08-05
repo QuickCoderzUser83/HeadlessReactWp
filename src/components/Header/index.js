@@ -7,7 +7,7 @@ import englishImg from '../../assets/images/header/english.jfif'
 import logo from '../../assets/images/header/foodie-logo.png'
 import avatar from '../../assets/images/header/avatar.avif'
 
-const Navbar = () => {
+const Header = () => {
 
     const user = useSelector((state) => state.auth.user)
     const dispatch = useDispatch()
@@ -224,4 +224,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Header

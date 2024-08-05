@@ -1,8 +1,8 @@
-import Pizza from '../../../assets/images/about/pizaa.png'
-import FastFood from '../../../assets/images/about/fast-food.png'
-import HealthyFood from '../../../assets/images/about/healthy-food.png'
-import FastDelivery from '../../../assets/images/about/fast-delivery.png'
-import FounderAvatar from '../../../assets/images/about/founder-avatar.png'
+import Pizza from '../../assets/images/about/pizaa.png'
+import FastFood from '../../assets/images/about/fast-food.png'
+import HealthyFood from '../../assets/images/about/healthy-food.png'
+import FastDelivery from '../../assets/images/about/fast-delivery.png'
+import FounderAvatar from '../../assets/images/about/founder-avatar.png'
 
 const AboutUs = () => {
     return(

@@ -3,11 +3,11 @@ import {Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { useSelector } from "react-redux";
 
 //User
-const AccountDetails = lazy(() => import('../components/account/AccountDetails'))
-const Address = lazy(() => import('../components/account/Address'))
-const Dashboard = lazy(() => import('../components/account/Dashboard'))
-const Downloads = lazy(() => import('../components/account/Downloads'))
-const Orders = lazy(() => import('../components/account/Orders'))
+const AccountDetails = lazy(() => import('../pages/Account/AccountDetails'))
+const Address = lazy(() => import('../pages/Account/Address'))
+const Dashboard = lazy(() => import('../pages/Account/Dashboard'))
+const Downloads = lazy(() => import('../pages/Account/Downloads'))
+const Orders = lazy(() => import('../pages/Account/Orders'))
 
 const ProtectedRoutes = () => {
 

@@ -1,5 +1,5 @@
-import Mockup from '../../../assets/images/download-app/mockup.png'
-import Avatar from '../../../assets/images/download-app/avatar.png'
+import Mockup from '../../assets/images/download-app/mockup.png'
+import Avatar from '../../assets/images/download-app/avatar.png'
 
 const DownloadApp = () => {
     return(

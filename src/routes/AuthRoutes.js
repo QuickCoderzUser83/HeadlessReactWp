@@ -2,7 +2,7 @@ import {lazy, Suspense} from 'react';
 import {Routes, Route} from 'react-router-dom';
 
 //Auth
-const Login = lazy(() => import('../components/pages/Login'));
+const Login = lazy(() => import('../pages/Login'));
 
 const AuthRoutes = () => {
     return(

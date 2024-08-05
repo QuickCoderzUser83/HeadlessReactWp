@@ -1,5 +1,5 @@
-import Banner from '../../../assets/images/combo-offer/banner.png'
-import Offer from '../../../assets/images/combo-offer/50-percent-off.svg'
+import Banner from '../../assets/images/combo-offer/banner.png'
+import Offer from '../../assets/images/combo-offer/50-percent-off.svg'
 
 
 const SpecialComboOffer = () => {
